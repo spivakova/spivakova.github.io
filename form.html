@@ -39,6 +39,10 @@
          text-transform: lowercase;
      
     }
+        
+         .txt-delivery {
+             wight: 50px
+         } 
          
     .btn {
     margin-top: 10px;
@@ -79,12 +83,68 @@
      
       <div class="form-group">
       <label for="login" class="lbl-header">Логин:</label>
-      <input type="text" id="login" class="inpt">
+      <input type="text" id="login" class="inpt" required>
       </div> 
       
       <div class="form-group">
       <label for="pswd" class="lbl-header">Пароль:</label>
-      <input type="password" id="pswd" class="inpt"> 
+      <input type="password" id="pswd" class="inpt" required> 
+      </div>
+      
+      <div class="form-group">
+      <label for="tel" class="lbl-header">Телефон:</label>
+      <input type="tel" id="tel" class="inpt" placeholder="+7(123)4567890" pattern> 
+      </div>
+      
+        <div class="form-group">
+      <label for="email" class="lbl-header">E-mail:</label>
+      <input type="email" id="email" class="inpt" placeholder="ivanov@mail.ru"> 
+      </div>
+      
+      <div class="form-group">
+      <label for="date" class="lbl-header">Дата:</label>
+      <input type="date" id="date" class="inpt" placeholder="дд.мм.гггг."> 
+      </div>
+      
+      
+      <div class="form-group">
+      <label for="num" class="lbl-header">Кол-во:</label>
+      <input type="number" id="num" class="inpt" placeholder="1" min="0" max="100" step="1"> 
+      </div>
+      
+      <div class="form-group">
+      <label for="range" class="lbl-header">Возраст:</label>
+      <span>14</span>
+      <input type="range" id="range" class="inpt" min="14" max="80" step="1"> 
+      <span>80</span>
+      <input type="text">
+      </div>
+      
+      <div class="form-group">
+      <label for="countries" class="lbl-header">Страна:</label>
+      <select name="countries" id="countries" size="2" multiple>
+    
+      <optgroup label="ЦФО">   
+      <option value="ru">Москва</option>
+      <option value="by" selected>Ярославль</option>
+      <option value="kz">Тверь</option>
+      </optgroup> 
+      <optgroup label="ЮФО">   
+      <option value="kz">Ростов</option>
+      <option value="kz">Майкоп</option>
+      <option value="kz">Краснодар</option>
+      </optgroup> 
+      <optgroup label="СЗО"> 
+      <option value="kz">Петрозаводск</option>
+      <option value="kz">Санкт-Питербург</option>
+      <option value="kz">Мурманск</option>
+      </optgroup> 
+      </select> 
+      </div>
+      
+      <div class="form-group">
+      <label class="lbl-header">Ваш любимый цвет:</label>
+      <input name="color" type="color" class="inpt" value="#098df2"> 
       </div>
       
       <div class="form-group">
@@ -114,7 +174,14 @@
        <input type="checkbox"  id="basketball" name="hobbi">
        <label class="lbl" for="basketball">Баскетбол</label>
        </div>
+      
+       <hr style="wight: 50%; margin: 10px 0; border: 2px groove #13e29a">
+       <div class="form-group">
+       <textarea name="delivery" placeholder="Ваш комментарий" rows="5" class=".txt-delivery">
        
+         
+             </textarea>
+       </div>
 <!--       .form-grop>input+button-->
         
        <div class="form-group">
