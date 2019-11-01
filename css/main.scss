@@ -1,0 +1,146 @@
+// Options
+// 
+// Quickly modify global styling by enabling or disabling optional features.
+
+$enable-rounded: true !default;
+$enable-shadows: true;
+$enable-transitions: true;
+$enable-hover-media-query: false;
+$enable-grid-classes: true;
+$enable-print-styles: true;
+
+// Variables
+//
+// Colors
+
+$theme-colors: (primary: #12bbad,
+    secondary: #4f70ce,
+    light: #f3f3f3,
+    dark: #151515,
+    info: #ccc,
+    success: #28a745,
+    warning: #ffc107,
+    danger: #dc3545);
+
+$body-bg: white;
+$body-color: #333;
+
+
+$body-color-inverse: invert($body-color) !default;
+$link-color: #12bbad;
+
+// Fonts
+$font-family-base: -apple-system,
+BlinkMacSystemFont,
+"Segoe UI",
+Roboto,
+"Helvetica Neue",
+Arial,
+sans-serif,
+"Apple Color Emoji",
+"Segoe UI Emoji",
+"Segoe UI Symbol";
+$headings-font-family: $font-family-base;
+$display-font-family: $font-family-base;
+$font-weight-normal: 200;
+$headings-font-weight: 200;
+$lead-font-size: 1.30rem;
+
+$spacer: 1.5rem;
+
+@import 'bootstrap-4.3.1';
+
+
+body {
+    background-color: #efefed;
+    font-family: 'PT Sans', sans-serif;
+
+}
+
+header {
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size: 90%;
+}
+
+.bg-menu {
+    background-color: #048364;
+    box-sizing: 30px;
+}
+
+.marks-text,
+.cart-text,
+.love-count,
+.cart-count {
+    color: #FF5D53;
+}
+
+.love-count,
+.cart-count {
+    font-weight: bolder;
+    font-size: 18;
+}
+
+.logo {
+	margin: auto;
+}
+
+@media (min-width: 0) {
+  .logo {
+    margin-top: 20px;
+    margin-left: 50px;
+    width: 75%;
+  }
+  
+  header {
+  	background-image: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .logo {
+    margin-top: 120px;
+    margin-left: 10px;
+    width: 150%;
+  }
+ header {
+		background-image: url("img/Header.jpg");
+  }
+}
+
+@media (min-width: 992px) {
+  .logo {
+    margin-top: 160px;
+    width: 95%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .logo {
+    margin-top: 240px;
+    width: 100%;
+  }
+}
+
+.top-menu {
+  margin-top: -60px;
+}
+	
+	.news {
+  margin-top: 30px;
+}
+
+	.header-news {
+	color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 18;
+    margin-left: -170px;
+
+}
+	.news-txt {
+	color: black;
+  text-transform: none;
+  font-weight: normal;
+  padding-left: 20px;
+}
