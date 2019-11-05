@@ -135,7 +135,7 @@ header {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 18;
-    margin-left: -170px;
+  margin-left: -170px;
 
 }
 	.news-txt {
@@ -145,7 +145,27 @@ header {
   padding-left: 20px;
 }
 .secret {
-  font-size: 13;
+  font-size: 14;
   display: inline-block;
+  margin-top: -150px;
+  margin-right: 100px;
+  
 }
  
+.mt-1 {
+font-size: 12;
+line-height: 1.7;
+}
+
+.carusel {
+margin: -90px
+}
+
+footer {
+margin: 40px;
+}
+
+.carousel-indicators {
+  display: inline-flex;
+	margin-top: -100px;
+}
